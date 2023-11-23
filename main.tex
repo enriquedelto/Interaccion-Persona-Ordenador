@@ -143,37 +143,51 @@ La programación es el proceso de diseñar y codificar programas de computadora 
     \end{lstlisting}
     \end{minipage}
 
+    \textbf{Explicación del Código:}
+    El código anterior demuestra un uso básico de la Programación Orientada a Objetos (POO) en Java. Se define una clase `Coche` con atributos como `marca` y `ano`, y métodos para obtener estos valores. Se crea un objeto `miCoche` de esta clase y se utilizan sus métodos para imprimir la marca y el año. Este enfoque modular y reutilizable de la POO facilita la organización y escalabilidad del código, permitiendo la creación de múltiples instancias de `Coche` con diferentes características.
+    
+    \textbf{Output del Programa:}
+    \begin{verbatim}
+    Marca del Coche: Toyota
+    Ano del Coche: 2021
+    \end{verbatim}
+
 \item \textbf{Programación Imperativa:} Centrada en la secuencia de comandos para manipular el estado de las variables. 
 
 \textit{Ejemplo: C, Pascal.}
 
-\begin{minipage}{\linewidth} % Empieza el entorno minipage
-\begin{lstlisting}[language=C, caption=Ejemplo de Programacion Imperativa en C]
-#include <stdio.h>
-
-int main() {
-    int contador = 0; // Inicializa una variable
-
-    // Ciclo para incrementar la variable
-    for (int i = 0; i < 5; i++) {
-        contador += i;
-        printf("Valor actual del contador: %d\n", contador);
+\begin{minipage}{\linewidth} 
+    \begin{lstlisting}[language=C, caption=Ejemplo de Programacion Imperativa en C]
+    #include <stdio.h>
+    
+    int main() {
+        // Declaracion de variables
+        int numero = 10; // Una variable 'numero' inicializada en 10
+        int factor = 2;  // Una variable 'factor' inicializada en 2
+        int resultado;   // Una variable 'resultado' sin inicializar
+    
+        // Mostrar el valor inicial de 'numero'
+        printf("Valor inicial de numero: %d\n", numero);
+    
+        // Secuencia de comandos para manipular las variables
+        resultado = numero * factor; // Multiplicar 'numero' por 'factor'
+        
+        // Mostrar el resultado de la operacion
+        printf("Resultado de %d multiplicado por %d es: %d\n", numero, factor, resultado);
+    
+        return 0;
     }
-
-    return 0;
-}
-\end{lstlisting}
-
-% Añadir la salida esperada del código
-\textbf{Salida esperada:}
-\begin{verbatim}
-Valor actual del contador: 0
-Valor actual del contador: 1
-Valor actual del contador: 3
-Valor actual del contador: 6
-Valor actual del contador: 10
-\end{verbatim}
-\end{minipage} % Termina el entorno minipage
+    \end{lstlisting}
+    
+    % Explicación del código
+    \textbf{Explicación del Código:} Este código demuestra la programación imperativa en C. Comienza con la declaración e inicialización de dos variables, `numero` y `factor`. Luego, una tercera variable `resultado` es declarada. La secuencia de comandos incluye una operación de multiplicación, donde `numero` es multiplicado por `factor`, y el resultado se almacena en `resultado`. Finalmente, el programa imprime tanto el valor inicial de `numero` como el `resultado` de la operación.
+    
+    \textbf{Salida esperada:}
+    \begin{verbatim}
+    Valor inicial de numero: 10
+    Resultado de 10 multiplicado por 2 es: 20
+    \end{verbatim}
+    \end{minipage}
 
 \item \textbf{Programación Funcional:} Aborda los problemas mediante funciones, enfocándose en las relaciones de entrada y salida. 
 
