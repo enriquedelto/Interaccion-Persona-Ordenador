@@ -1,6 +1,6 @@
 # Notas de IPO (Interacción Persona-Ordenador)
 
-![LaTeX](https://img.shields.io/badge/LaTeX-documentation-blue)
+[![LaTeX](https://img.shields.io/badge/LaTeX-documentation-blue)](https://www.latex-project.org/help/documentation/)
 
 ## Autor: Enrique M. Delgado Torres
 
