@@ -1,5 +1,7 @@
 # Notas de IPO (Interacción Persona-Ordenador)
 
+![LaTeX](https://img.shields.io/badge/LaTeX-documentation-blue)
+
 ## Autor: Enrique M. Delgado Torres
 
 Este repositorio contiene materiales educativos y ejemplos de código relacionados con la Interacción Persona-Ordenador (IPO), una disciplina multidisciplinaria que se enfoca en el diseño, evaluación e implementación de interfaces para una interacción efectiva entre seres humanos y sistemas informáticos.
