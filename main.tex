@@ -100,44 +100,48 @@ La programación es el proceso de diseñar y codificar programas de computadora 
 
 \textit{Ejemplo: Java, Python.}
 
-\begin{minipage}{\linewidth} % Empieza el entorno minipage
-\begin{lstlisting}[language=Java, caption=Ejemplo de POO en Java]
-// Definicion de la clase "Coche"
-public class Coche {
-    // Atributos de la clase
-    private String marca;
-    private int ano;
-
-    // Constructor de la clase
-    public Coche(String marca, int ano) {
-        this.marca = marca;
-        this.ano = ano;
+\begin{minipage}{\linewidth}
+    \begin{lstlisting}[language=Java, caption=Ejemplo de POO en Java]
+    // Definicion de la clase "Coche"
+    // Una clase es una plantilla para crear objetos
+    public class Coche {
+        // Atributos de la clase
+        // Representan las caracteristicas del objeto
+        private String marca;
+        private int ano;
+    
+        // Constructor de la clase
+        // Inicializa un nuevo objeto de la clase Coche
+        public Coche(String marca, int ano) {
+            this.marca = marca;
+            this.ano = ano;
+        }
+    
+        // Metodos de la clase
+        // Definen el comportamiento del objeto
+        public String getMarca() {
+            return marca;
+        }
+    
+        public int getAno() {
+            return ano;
+        }
     }
-
-    // Metodo para obtener la marca del coche
-    public String getMarca() {
-        return marca;
+    
+    // Clase principal para ejecutar el programa
+    public class Main {
+        public static void main(String[] args) {
+            // Creacion de un objeto "Coche"
+            // Un objeto es una instancia de una clase
+            Coche miCoche = new Coche("Toyota", 2021);
+    
+            // Uso de metodos del objeto
+            System.out.println("Marca del Coche: " + miCoche.getMarca());
+            System.out.println("Ano del Coche: " + miCoche.getAno());
+        }
     }
-
-    // Metodo para obtener el ano del coche
-    public int getAno() {
-        return ano;
-    }
-}
-
-// Clase principal para ejecutar el programa
-public class Main {
-    public static void main(String[] args) {
-        // Creacion de un objeto "Coche"
-        Coche miCoche = new Coche("Toyota", 2021);
-
-        // Uso de metodos del objeto
-        System.out.println("Marca: " + miCoche.getMarca());
-        System.out.println("Ano: " + miCoche.getAno());
-    }
-}
-\end{lstlisting}
-\end{minipage} % Termina el entorno minipage
+    \end{lstlisting}
+    \end{minipage}
 
 \item \textbf{Programación Imperativa:} Centrada en la secuencia de comandos para manipular el estado de las variables. 
 
