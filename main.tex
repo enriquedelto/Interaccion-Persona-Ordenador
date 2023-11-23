@@ -1,0 +1,253 @@
+\documentclass{report}
+% Configuración
+\input{config.tex}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[scaled]{helvet}     % Fuente del documento
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[utf8]{inputenc}
+\usepackage{url, lipsum}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{gray},
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    tabsize=4,
+    breaklines=true,
+    showstringspaces=false
+}
+
+% Puedes cambiar el color principal
+% \definecolor{primary}{HTML}{}
+
+\begin{document}
+
+\pagestyle{empty}
+\portada{NOTAS DE IPO}{Plantilla de notas}{Enrique M. Delgado Torres}
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Introducción a la Interacción Persona Ordenador}
+
+\section{Concepto Interfaz en el contexto de la IPO}
+La interfaz refleja las \textbf{Propiedades Físicas}, las \textbf{Funciones} y el \textbf{Balance de Poder y Control}, facilitando así la transmisión de información, órdenes y datos. Además, permite compartir sensaciones, intuiciones y nuevas formas de ver las cosas entre humanos y sistemas informáticos.
+
+\vspace{4mm} % Añade un espacio vertical de 4mm entre los párrafos
+
+\begin{itemize}[itemsep=0.1em] % Ajusta la separación de los ítems aquí
+    \item \textbf{Propiedades Físicas:} La interfaz está diseñada teniendo en cuenta tanto las necesidades físicas y ergonómicas del usuario como las características del sistema informático, garantizando comodidad y accesibilidad.
+    \item \textbf{Funciones:} La interfaz muestra y facilita las tareas específicas que el usuario necesita realizar, asegurando una interacción intuitiva y eficiente.
+    \item \textbf{Balance de Poder y Control:} La interfaz define quién controla la interacción, ya sea el usuario o el sistema, influyendo en la experiencia del usuario y la eficacia del sistema.
+\end{itemize}
+
+\section{¿Qué es la IPO?}
+La Interacción Persona-Ordenador (IPO) es una disciplina multidisciplinaria dedicada al diseño, evaluación e implementación de interfaces que faciliten una interacción entre seres humanos y sistemas informáticos de forma segura, efectiva, útil, eficiente, usable, accesible e inclusiva.
+
+\vspace{4mm} % Añade un espacio vertical de 4mm entre los párrafos
+
+La IPO se enfoca en la adaptabilidad, asegurando que las interfaces se desarrollen y evolucionen según las necesidades cambiantes de los usuarios y los avances tecnológicos. 
+
+\vspace{4mm}
+
+Traslada los conocimientos de diversas disciplinas para desarrollar herramientas y técnicas que ayuden a los diseñadores a crear sistemas informáticos idóneos.
+
+\section{Disciplinas Integradas en la IPO}
+La IPO combina conocimientos y métodos de diversas disciplinas, incluyendo:
+\begin{multicols}{3}
+\begin{itemize}[itemsep=0.1em] % Ajusta la separación de los ítems aquí
+    \item Diseño
+    \item Psicología
+    \item Ergonomía
+    \item Programación
+    \item Ingeniería de Software
+    \item Inteligencia Artificial
+    \item Sociología
+\end{itemize}
+\end{multicols}
+
+\subsection{Diseño}
+Disciplina centrada en crear interfaces que son tanto funcionales como estéticamente agradables, buscando mejorar la experiencia y el entorno del usuario mediante soluciones intuitivas, accesibles y atractivas.
+
+\subsection{Psicología}
+Disciplina centrada en estudiar cómo los individuos y grupos procesan información, se comportan y toman decisiones al interactuar con sistemas informáticos. 
+
+Cabe distinguir entre:
+    \begin{itemize}
+        \item \textbf{La Psicología Cognitiva} se enfoca en entender procesos mentales individuales, como percepción y toma de decisiones.
+        \item \textbf{La Psicología Social} examina cómo el entorno social afecta el comportamiento del usuario. Ambas ramas contribuyen a diseñar interfaces más intuitivas, eficientes y satisfactorias para los usuarios.
+    \end{itemize}
+
+\subsection{Ergonomía}
+Disciplina centrada en el diseño de interfaces y entornos de trabajo que maximizan la comodidad, eficiencia y seguridad. Esto incluye la organización óptima de controles y pantallas, consideración de factores físicos como la iluminación y la posición, y el uso adecuado de colores para facilitar la interacción y prevenir riesgos de salud.
+
+\subsection{Programación}
+La programación es el proceso de diseñar y codificar programas de computadora para resolver problemas o realizar tareas específicas. Se fundamenta en diversos paradigmas, cada uno con su enfoque y metodología distintiva:
+
+\begin{itemize}
+\item \textbf{Programación Orientada a Objetos:} Emplea clases y objetos para estructurar el código. Facilita la modularidad y reutilización. 
+
+\textit{Ejemplo: Java, Python.}
+
+\begin{minipage}{\linewidth} % Empieza el entorno minipage
+\begin{lstlisting}[language=Java, caption=Ejemplo de POO en Java]
+// Definicion de la clase "Coche"
+public class Coche {
+    // Atributos de la clase
+    private String marca;
+    private int ano;
+
+    // Constructor de la clase
+    public Coche(String marca, int ano) {
+        this.marca = marca;
+        this.ano = ano;
+    }
+
+    // Metodo para obtener la marca del coche
+    public String getMarca() {
+        return marca;
+    }
+
+    // Metodo para obtener el ano del coche
+    public int getAno() {
+        return ano;
+    }
+}
+
+// Clase principal para ejecutar el programa
+public class Main {
+    public static void main(String[] args) {
+        // Creacion de un objeto "Coche"
+        Coche miCoche = new Coche("Toyota", 2021);
+
+        // Uso de metodos del objeto
+        System.out.println("Marca: " + miCoche.getMarca());
+        System.out.println("Ano: " + miCoche.getAno());
+    }
+}
+\end{lstlisting}
+\end{minipage} % Termina el entorno minipage
+
+\item \textbf{Programación Imperativa:} Centrada en la secuencia de comandos para manipular el estado de las variables. 
+
+\textit{Ejemplo: C, Pascal.}
+
+\begin{minipage}{\linewidth} % Empieza el entorno minipage
+\begin{lstlisting}[language=C, caption=Ejemplo de Programacion Imperativa en C]
+#include <stdio.h>
+
+int main() {
+    int contador = 0; // Inicializa una variable
+
+    // Ciclo para incrementar la variable
+    for (int i = 0; i < 5; i++) {
+        contador += i;
+        printf("Valor actual del contador: %d\n", contador);
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+% Añadir la salida esperada del código
+\textbf{Salida esperada:}
+\begin{verbatim}
+Valor actual del contador: 0
+Valor actual del contador: 1
+Valor actual del contador: 3
+Valor actual del contador: 6
+Valor actual del contador: 10
+\end{verbatim}
+\end{minipage} % Termina el entorno minipage
+
+\item \textbf{Programación Funcional:} Aborda los problemas mediante funciones, enfocándose en las relaciones de entrada y salida. 
+
+\textit{Ejemplo: Haskell, Lisp.}
+
+\begin{minipage}{\linewidth} % Empieza el entorno minipage
+\begin{lstlisting}[language=Haskell, caption=Ejemplo de Programacion Funcional en Haskell]
+-- Define una funcion simple que duplica un numero
+duplicar :: Int -> Int
+duplicar x = x * 2
+
+-- Funcion principal
+main :: IO ()
+main = print (duplicar 5)
+\end{lstlisting}
+
+% Añadir la salida esperada del código
+\textbf{Salida esperada:}
+\begin{verbatim}
+10
+\end{verbatim}
+\end{minipage} % Termina el entorno minipage
+
+\item \textbf{Programación Declarativa:} Se concentra en describir el \textit{qué} de las operaciones, dejando el \textit{cómo} a la interpretación del sistema. 
+
+\textit{Ejemplo: SQL, Prolog.}
+
+\begin{minipage}{\linewidth} % Empieza el entorno minipage
+\begin{lstlisting}[language=SQL, caption=Ejemplo de Programacion Declarativa en SQL]
+-- SQL para seleccionar nombres de una tabla de empleados
+SELECT nombre FROM empleados WHERE edad > 30;
+\end{lstlisting}
+
+% Añadir la salida esperada del código
+\textbf{Salida esperada:}
+\begin{verbatim}
+[Lista de nombres de empleados mayores de 30 años]
+\end{verbatim}
+\end{minipage} % Termina el entorno minipage
+
+\item \textbf{Programación Concurrente:} Maneja operaciones que se ejecutan simultáneamente, esencial en aplicaciones multitarea y multiusuario. 
+
+\textit{Ejemplo: Erlang, Go.}
+
+\begin{minipage}{\linewidth} % Empieza el entorno minipage
+\begin{lstlisting}[language=Go, caption=Ejemplo de Programacion Concurrente en Go]
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+// Funcion que se ejecutara de manera concurrente
+func imprimirNumeros() {
+    for i := 1; i <= 5; i++ {
+        time.Sleep(1 * time.Second)
+        fmt.Println(i)
+    }
+}
+
+func main() {
+    // Ejecutar la funcion imprimirNumeros de manera concurrente
+    go imprimirNumeros()
+
+    // Esperar a que el usuario presione una tecla
+    fmt.Println("Presiona Enter para finalizar")
+    fmt.Scanln()
+}
+\end{lstlisting}
+
+\textbf{Salida esperada:}
+\begin{verbatim}
+Presiona Enter para finalizar
+[Los números del 1 al 5 se imprimirán uno cada segundo]
+\end{verbatim}
+\end{minipage} % Termina el entorno minipage
+
+\end{itemize}
+
+\end{document}  
